@@ -6,7 +6,7 @@
 //                    2->data
 // run with >php csv_to_fasta.php my_filename.csv
 
-$filename = $argv[0];
+$filename = $argv[1];
 
 if (($handle = fopen($filename, "r")) === FALSE) {
          echo "could not read file {$filename} \n";
